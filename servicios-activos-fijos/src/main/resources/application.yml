@@ -1,0 +1,24 @@
+
+spring:
+
+  jpa:
+    #database-platform: org.hibernate.dialect.Oracle10gDialect
+    open-in-view: true
+    properties:
+      hibernate:
+        format_sql: true 
+        #dialect: org.hibernate.dialect.Oracle10gDialect
+      org:
+        hibernate:      
+          generate-ddl : true       
+          ddl-auto: update
+        
+      
+  datasource:
+    url: jdbc:oracle:thin:@10.20.102.118:12003/COMPETENCIA
+    username: competencia_user
+    password: S1c2019
+    driver-class-name: oracle.jdbc.OracleDriver
+  main:
+    allow-bean-definition-overriding: true
+
